@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 7.5rem;
+    height: 13.34rem;
+    background: #fff;
+}
+.sky{
+    width: 100%;
+    height: 7.91rem;
+    background: #fff;
+    position: relative;
+}
+.Letter{
+    width: 0.5rem;
+    height: 0.8rem;
+    background-size: contain;
+    position: absolute;
+    z-index: 1;
+}
+.sky1{
+    width: 7.5rem;
+    height: 5.48rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/sky.png");
+    background-size: 7.5rem 5.48rem;
+}
+.cloud{
+    width: 4.88rem;
+    height: 0.52rem;
+    position: absolute;
+    top: 1.12rem;
+    left: 0;
+    margin-left: auto;
+    right: 0;
+    margin-right: auto;
+    background-image: url("../img/cloud.png");
+    background-size: 4.88rem 0.52rem;
+    z-index: 5;
+    animation:cloud 3s infinite;
+}
+@keyframes cloud{
+    0%{
+        transform: translateX(-1rem);
+    }
+    100% {
+        transform: translateX(1rem);
+    }
+}
+.voice{
+    width: 0.48rem;
+    height: 0.48rem;
+    position: absolute;
+    top: 0.62rem;
+    right: 0.24rem;
+    background-image: url("../img/voice.png");
+    background-size: 0.48rem 0.48rem;
+}
+.Apause{
+    width: 0.48rem;
+    height: 0.48rem;
+    position: absolute;
+    top: 0.62rem;
+    right: 0.24rem;
+    background-image: url("../img/Apause.png");
+    background-size: 0.48rem 0.48rem;
+}
+.life{
+    width: 1.24rem;
+    height: 1.24rem;
+    font-size: 0.28rem;
+    line-height: 0.8rem;
+    text-align: center;
+    font-family: 微软雅黑;
+    position: absolute;
+    top: 3.23rem;
+    right: 0.24rem;
+    background-image: url("../img/Health.png");
+    background-size: 1.24rem 1.24rem;
+}
+.integral{
+    width: 1.24rem;
+    height: 1.24rem;
+    font-size: 0.28rem;
+    line-height: 0.8rem;
+    text-align: center;
+    font-family: 微软雅黑;
+    position: absolute;
+    bottom: 2.07rem;
+    right: 0.24rem;
+    background-image: url("../img/integral.png");
+    background-size: 1.24rem 1.24rem;
+}
+.play{
+    width: 1.25rem;
+    height: 1.25rem;
+    position: absolute;
+    bottom: 0.44rem;
+    right: 0.24rem;
+    background-image: url("../img/play.png");
+    background-size: 1.25rem 1.25rem;
+}
+.pause{
+    width: 1.25rem;
+    height: 1.25rem;
+    position: absolute;
+    bottom: 0.44rem;
+    right: 0.24rem;
+    background-image: url("../img/pause.png");
+    background-size: 1.25rem 1.25rem;
+}
+/*.pause{*/
+    /*width: 1.25rem;*/
+    /*height: 1.25rem;*/
+    /*position: absolute;*/
+    /*bottom: 0.44rem;*/
+    /*right: 0.24rem;*/
+    /*background-image: url("../img/pause.png");*/
+    /*background-size: 1.25rem 1.25rem;*/
+/*}*/
+.lawn{
+    width: 100%;
+    height: 0.4rem;
+    background-image: url("../img/lawn.png");
+    background-size: 7.5rem 0.4rem;
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+.car{
+    width: 2.12rem;
+    height: 2.12rem;
+    position: absolute;
+    bottom: 0.08rem;
+    background-image: url("../img/car.png");
+    background-size: 2.12rem 2.12rem;
+}
+.rabbit{
+    width: 0.7rem;
+    height: 0.9rem;
+    position: absolute;
+    background: no-repeat;
+    background-size:contain;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wall{
+    width: 100%;
+    height: 1.1rem;
+    background-image: url("../img/wall.png");
+    background-size: 7.5rem 1.1rem;
+}
+.keyBack{
+    height: 4.32rem;
+    background-image: url("../img/key-background.png");
+    background-size: 7.5rem 4.32rem;
+    overflow: hidden;
+}
+.blue{
+    width: 7.02rem;
+    height: 3.8rem;
+    margin-top: 0.25rem;
+    margin-left: 0.24rem;
+    background: #1a62f5;
+    opacity: 0.65;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.3rem 0.2rem;
+    box-sizing: border-box;
+
+}
+.blue .key{
+    width: 0.6rem;
+    height: 0.9rem;
+    font-size: 0.30rem;
+    padding-left: 0.1rem;
+    text-align: left;
+    box-sizing: border-box;
+    line-height: 0.8rem;
+    background-image: url("../img/key.png");
+    background-size: contain;
+    margin: 0.05rem 0.02rem;
+}
+.blue .key:nth-child(11){
+    margin-left: 0.3rem;
+}
+.blue .key:nth-child(20){
+    margin-left: 0.3rem;
+}
+.over{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 30;
+}
+.gameOver{
+    width: 4.3rem;
+    height: 4.49rem;
+    margin: 1.3rem auto;
+    background-image: url("../img/gameover.png");
+    background-size: contain;
+    position: relative;
+}
+.point{
+    width: 0.8rem;
+    height: 0.5rem;
+    position: absolute;
+    /*background: red;*/
+    top: 2.75rem;
+    left: 2.2rem;
+    font-size: 0.36rem;
+    color: #333333;
+    z-index: 10;
+}
+.Button{
+    width: 2.63rem;
+    height: 0.6rem;
+    position: absolute;
+    top: 3.4rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../img/btn.png");
+    background-size: contain;
+}
